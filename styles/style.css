@@ -31,38 +31,247 @@ body {
     color: white;
 }
 
-.home-title{
+.home-title {
 
 
-display: flex;
-justify-content: center;
-align-items: center;
-height: 50vh;
-color: white;
-text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: white;
+    text-align: center;
 
 
 }
 
-.home-sect{
+.home-sect {
 
-width: 70%;
+    width: 70%;
 
-    
+
 }
 
 .home-sect h1 {
 
 
-font-size: 70px;
+    font-size: 70px;
 
 }
 
-.home-sect p{
+.home-sect p {
 
-width: 30%;
-margin: auto;
-padding-top: 20px;
-font-weight:100;
+    width: 30%;
+    margin: auto;
+    padding-top: 20px;
+    font-weight: 100;
 
 }
+
+
+/* From Uiverse.io by satyamchaudharydev */
+/* this is a recreation of twitter search in css */
+/* wrapper për qendërzim */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    /* horizontalisht */
+    align-items: center;
+    /* vertikalisht */
+
+}
+
+.form {
+    --input-text-color: #fff;
+    --input-bg-color: #283542;
+    --focus-input-bg-color: transparent;
+    --text-color: #949faa;
+    --active-color: #1b9bee;
+    --width-of-input: 200px;
+    --inline-padding-of-input: 1.2em;
+    --gap: 0.9rem;
+
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: var(--width-of-input);
+    position: relative;
+    isolation: isolate;
+}
+
+.form .fancy-bg {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background: var(--input-bg-color);
+    border-radius: 30px;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.form label {
+    width: 100%;
+    padding: 0.8em;
+    height: 40px;
+    padding-inline: var(--inline-padding-of-input);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.form .search,
+.form .close-btn {
+    position: absolute;
+}
+
+.form .search {
+    fill: var(--text-color);
+    left: var(--inline-padding-of-input);
+}
+
+.form svg {
+    width: 17px;
+    display: block;
+}
+
+.form .close-btn {
+    border: none;
+    right: var(--inline-padding-of-input);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active-color);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form .input {
+    color: var(--input-text-color);
+    width: 100%;
+    margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+    background: none;
+    border: none;
+}
+
+.form .input:focus {
+    outline: none;
+}
+
+.form .input::placeholder {
+    color: var(--text-color);
+}
+
+.form .input:focus~.fancy-bg {
+    border: 1px solid var(--active-color);
+    background: var(--focus-input-bg-color);
+}
+
+.form .input:focus~.search {
+    fill: var(--active-color);
+}
+
+.form .input:valid~.close-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:hover,
+.form input:-webkit-autofill:focus,
+.form input:-webkit-autofill:active {
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+    -webkit-transition-delay: 9999s;
+}
+
+.section-cards {
+
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    padding: 30px;
+    position: absolute;
+    bottom: -50%;
+
+
+
+}
+
+.cards {
+
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+    line-height: 2em;
+    font-weight: 100;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+ 
+}
+
+.menu-center {
+  justify-content: center;
+background-color:#EEEEEE;
+  border-radius: 20px;
+  width: 300px;            /* ndryshoje sa të duash */
+  margin-inline: auto;
+}
+
+.menu-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;            /* ngjyra e linkut te Bootstrap */
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+
+}
+
+.menu-link:hover {
+  color: #0a58ca;
+}
+
+.menu-link-active {
+ 
+  font-weight: 600;
+}
+
+.menu-link-disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+
+.best-products{
+
+background-color: #F7F7F7;
+position:absolute;
+bottom: -70%;
+width: 100%;
+
+
+
+}
+
+.best-products h1{
+
+text-align: center;
+margin: 10px;
+padding: 30px;
+
+
+}
+
