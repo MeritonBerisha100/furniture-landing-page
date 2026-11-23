@@ -6,120 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pando - Furniture Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-    <nav class="navbar justify-content-between px-5">
+    <div class="hero">
 
-        <span class="nav-logo">Pando</span>
+        <nav class="navbar navbar-expand-lg navbar-dark px-3 px-lg-5">
+            <span class="nav-logo">Pando</span>
 
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Furniture</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <svg class="nav-icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M17.007 2.83325C20.8036 2.83325 23.9249 5.81662 24.0833 9.59688H24.0463C24.0508 9.70676 24.0296 9.81618 23.9846 9.91659H24.2058C25.9299 9.91659 27.7353 11.1116 28.4592 13.9963L28.5378 14.3367L29.6271 23.1125C30.411 28.7097 27.3487 31.0636 23.1713 31.1633L22.8912 31.1666H11.1471C6.90168 31.1666 3.63027 29.6196 4.34956 23.4933L4.39861 23.1125L5.50041 14.3367C6.0437 11.2301 7.86761 10.0048 9.625 9.92121L9.81993 9.91659H9.93067C9.912 9.81083 9.912 9.70263 9.93067 9.59688C10.0891 5.81662 13.2104 2.83325 17.007 2.83325ZM12.8874 14.6331C12.1959 14.6331 11.6354 15.21 11.6354 15.9217C11.6354 16.6334 12.1959 17.2104 12.8874 17.2104C13.5789 17.2104 14.1394 16.6334 14.1394 15.9217L14.1297 15.7601C14.0524 15.1247 13.5257 14.6331 12.8874 14.6331ZM21.0882 14.6331C20.3968 14.6331 19.8362 15.21 19.8362 15.9217C19.8362 16.6334 20.3968 17.2104 21.0882 17.2104C21.7797 17.2104 22.3403 16.6334 22.3403 15.9217C22.3403 15.21 21.7797 14.6331 21.0882 14.6331ZM16.9515 4.6783C14.2257 4.6783 12.0159 6.88042 12.0159 9.59688C12.0346 9.70263 12.0346 9.81083 12.0159 9.91659H21.9487C21.9093 9.81451 21.8884 9.70625 21.887 9.59688C21.887 6.88042 19.6773 4.6783 16.9515 4.6783Z"
-                fill="currentColor" />
-        </svg>
+            <div class="collapse navbar-collapse justify-content-between" id="mainNav">
+                <ul class="nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Furniture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
 
-    </nav>
+                <svg class="nav-icon" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-label="Cart">
+                    <path
+                        d="M17.007 2.83325C20.8036 2.83325 23.9249 5.81662 24.0833 9.59688H24.0463C24.0508 9.70676 24.0296 9.81618 23.9846 9.91659H24.2058C25.9299 9.91659 27.7353 11.1116 28.4592 13.9963L28.5378 14.3367L29.6271 23.1125C30.411 28.7097 27.3487 31.0636 23.1713 31.1633L22.8912 31.1666H11.1471C6.90168 31.1666 3.63027 29.6196 4.34956 23.4933L4.39861 23.1125L5.50041 14.3367C6.0437 11.2301 7.86761 10.0048 9.625 9.92121L9.81993 9.91659H9.93067C9.912 9.81083 9.912 9.70263 9.93067 9.59688C10.0891 5.81662 13.2104 2.83325 17.007 2.83325ZM12.8874 14.6331C12.1959 14.6331 11.6354 15.21 11.6354 15.9217C11.6354 16.6334 12.1959 17.2104 12.8874 17.2104C13.5789 17.2104 14.1394 16.6334 14.1394 15.9217L14.1297 15.7601C14.0524 15.1247 13.5257 14.6331 12.8874 14.6331ZM21.0882 14.6331C20.3968 14.6331 19.8362 15.21 19.8362 15.9217C19.8362 16.6334 20.3968 17.2104 21.0882 17.2104C21.7797 17.2104 22.3403 16.6334 22.3403 15.9217C22.3403 15.21 21.7797 14.6331 21.0882 14.6331ZM16.9515 4.6783C14.2257 4.6783 12.0159 6.88042 12.0159 9.59688C12.0346 9.70263 12.0346 9.81083 12.0159 9.91659H21.9487C21.9093 9.81451 21.8884 9.70625 21.887 9.59688C21.887 6.88042 19.6773 4.6783 16.9515 4.6783Z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+        </nav>
 
+        <header class="home-title">
+            <div class="home-sect animate__animated animate__fadeInUp">
+                <h1>Make your interior more minimalistic &amp; modern</h1>
+                <p>Transform your room with Pando into a more minimalist and modern space with ease and speed.</p>
+            </div>
+        </header>
 
-    <div class="  home-title">
-        <div class="home-sect">
-            <h1>Make your interior more
-                minimalistic & modern</h1>
-            <p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
+        <!-- Search bar (Uiverse.io by satyamchaudharydev) -->
+        <div class="search-wrapper">
+            <form class="form">
+                <label for="search">
+                    <input class="input" type="text" required placeholder="Search furniture" id="search">
+                    <div class="fancy-bg"></div>
+                    <div class="search">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <button class="close-btn" type="reset" aria-label="Clear search">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </label>
+            </form>
         </div>
 
-
-
-
     </div>
 
-    <!-- From Uiverse.io by satyamchaudharydev -->
+    <section class="section-cards">
+        <h2>Why Choose Us</h2>
 
-
-    <div class="search-wrapper">
-        <form class="form">
-            <label for="search">
-                <input class="input" type="text" required placeholder="Search twitter" id="search">
-                <div class="fancy-bg"></div>
-                <div class="search">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <g>
-                            <path
-                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                            </path>
-                        </g>
-                    </svg>
-                </div>
-                <button class="close-btn" type="reset">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </label>
-        </form>
-    </div>
-
-
-    <div class="section-cards">
-
-        <h1>Why Choosing Us</h1>
         <div class="cards">
-
-            <h3>Luxury facilities</h3>
-            <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around
-                facilities.</p>
+            <h3>Luxury Quality</h3>
+            <p>Every piece is crafted with premium materials, giving you comfort and a refined look in every room.</p>
             <span>More Info</span>
-
         </div>
 
         <div class="cards">
-
             <h3>Affordable Price</h3>
-            <p>TYou can get a workspace of the highst quality at an affordable price and still enjoy the facilities that
-                are oly here.</p>
+            <p>Get high-quality furniture at a fair price without compromising on design or durability.</p>
             <span>More Info</span>
-
         </div>
 
         <div class="cards">
-
             <h3>Many Choices</h3>
-            <p>We provide many unique work space choices so that you can choose the workspace to your liking.</p>
+            <p>We offer a wide range of unique styles so you can find the furniture that fits your taste.</p>
             <span>More Info</span>
-
         </div>
+    </section>
 
-    </div>
-
-
-
-    <div class="best-products">
-        <h1>Best Selling Products</h1>
-
+    <section class="best-products">
         <ul class="menu-list menu-center">
             <li class="menu-item">
-                <a class="menu-link menu-link-active" href="#" style="background-color: white; width: 100%; border-radius: 20px;">Chair</a>
+                <a class="menu-link menu-link-active" href="#">Chair</a>
             </li>
             <li class="menu-item">
                 <a class="menu-link" href="#">Beds</a>
@@ -129,28 +117,82 @@
             </li>
             <li class="menu-item">
                 <a class="menu-link" href="#">Lamp</a>
-            </li>   
+            </li>
         </ul>
 
-        <div class="products">
+        <main class="container py-5">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
 
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/Group 3742.png" class="card-img-top product-image" alt="Modern chair">
+                        <div class="card-body">
+                            <span class="badge text-bg-success mb-2">In stock</span>
+                            <h5 class="card-title">Modern Chair</h5>
+                            <p class="card-text text-body-secondary">
+                                Clean lines and all-day comfort for any room.
+                            </p>
+                            <p class="fw-bold fs-5">€49.99</p>
+                            <a href="#" class="btn btn-primary w-100">Buy now</a>
+                        </div>
+                    </div>
+                </div>
 
-        </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/Group 53.png" class="card-img-top product-image" alt="Minimal chair">
+                        <div class="card-body">
+                            <span class="badge text-bg-success mb-2">In stock</span>
+                            <h5 class="card-title">Minimal Chair</h5>
+                            <p class="card-text text-body-secondary">
+                                A simple, elegant design that fits every interior.
+                            </p>
+                            <p class="fw-bold fs-5">€79.99</p>
+                            <a href="#" class="btn btn-primary w-100">Buy now</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark.png"
+                            class="card-img-top product-image" alt="Black armchair">
+                        <div class="card-body">
+                            <span class="badge text-bg-warning mb-2">Sale</span>
+                            <h5 class="card-title">Black Armchair</h5>
+                            <p class="card-text text-body-secondary">
+                                Soft cushioning and a bold look for your living room.
+                            </p>
+                            <p class="fw-bold fs-5">€34.99</p>
+                            <a href="#" class="btn btn-primary w-100">Buy now</a>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (1).png"
+                            class="card-img-top product-image" alt="Dark gray armchair">
+                        <div class="card-body">
+                            <span class="badge text-bg-success mb-2">In stock</span>
+                            <h5 class="card-title">Dark Gray Armchair</h5>
+                            <p class="card-text text-body-secondary">
+                                Relaxed comfort with a modern, minimal finish.
+                            </p>
+                            <p class="fw-bold fs-5">€59.99</p>
+                            <a href="#" class="btn btn-primary w-100">Buy now</a>
+                        </div>
+                    </div>
+                </div>
 
-
-
-
-
-
-
-
+            </div>
+        </main>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/script.js"></script>
-    <script src="/scripts/animate.js"></script>
+    <script src="scripts/animate.js"></script>
 </body>
 
 </html>
